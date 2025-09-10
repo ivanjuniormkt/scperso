@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 100% !important;
+      padding: 20px !important;
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+  }
+
+  .footer-content p {
+      margin: 10px 0px !important;
+      display: flex !important;
+      gap: 0px !important;
+      padding: 3px 0px !important;
+      text-align: left !important;
+      font-weight: 100 !important;
+      letter-spacing: 1px !important;
+  }
+
+  .linha {
+      height: auto !important;
+      width: 100% !important;
+      background-color: #ffffff30 !important;
+      margin: 0 !important;
+      border: 1px solid #ffffff4d !important;
+  }
+
+  .footer-content {
+    display: flex !important;
+    justify-content: flex-start !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+}
+
+html, body {
+  height: auto !important;
+}
+}
+
+body {
+  font-family: 'Creato Display', sans-serif;
+  background: url('imgs/fundo-desk.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background: #03316d;
+    margin: 0;
+  }
+
+  .fundo-topo {
+    background: url('imgs/fundo-mob.jpg') no-repeat top center;
+    background-size: contain;
+    height: 768px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.perfil {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+  margin: 0 auto 10px auto;
+  display: block;
+}
+
+h1 {
+  font-size: 24px;
+  text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: #7f7f7f;
+    font-weight: normal;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+  max-width: 1400px;
+}
+
+@media screen and (min-width: 768px) {
+  .links {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 120px;
+  }
+
+  .pedido-img {
+    width: 180px; /* ou 200px, ajuste como quiser */
+    height: auto;
+  }
+}
+
+.pedido-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+@keyframes impacto-suave {
+  0%    { transform: scale(1) rotate(0deg); }
+  12.5% { transform: scale(1.1) rotate(3deg); }
+  25%   { transform: scale(1.08) rotate(-3deg); }
+  37.5% { transform: scale(1.1) rotate(3deg); }
+  50%   { transform: scale(1.08) rotate(-3deg); }
+  62.5% { transform: scale(1.1) rotate(3deg); }
+  75%   { transform: scale(1.05) rotate(-2deg); }
+  90%   { transform: scale(1.02) rotate(-1deg); }
+  100%  { transform: scale(1) rotate(0deg); }
+}
+
+.pedido-img.ativo {
+  animation: impacto-suave 1.2s ease forwards;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1;
+}
+
+.footer {
+  background-color: #021c3b;
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  font-size: 14px;
+}
+
+.footer-content p {
+  margin: 6px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 15px;
+  font-size: 12px;
+}
+
+.icon-phone {
+  width: 16px;
+  height: 16px;
+  fill: #fff;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.linha {
+    height: auto;
+    background-color: #ffffff30;
+    margin: 20px 0;
+    border: 1px solid #ffffff4d;
+}
+
+.ig {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 1025px) {
+  iframe {
+    display: none;
+  }
+}
+
+a.iglink {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+a.iglink:hover {
+  opacity: 0.7;
+  transform: scale(1.05);
+}
+
