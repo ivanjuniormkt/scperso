@@ -1,4 +1,0 @@
-# scperso
-# scperso
-# scperso
-# scperso
